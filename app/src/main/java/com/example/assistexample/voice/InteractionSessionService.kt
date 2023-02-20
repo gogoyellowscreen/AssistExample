@@ -10,17 +10,17 @@ import androidx.annotation.RequiresApi
 @RequiresApi(Build.VERSION_CODES.M)
 class InteractionSessionService : VoiceInteractionSessionService() {
     override fun onNewSession(bundle: Bundle?): VoiceInteractionSession {
-        Log.d("ASSIST_EXAMPLE", "start new session")
+        Log.d(TAG, "start new session")
         return InteractionSession(this)
     }
 
     override fun onCreate() {
         super.onCreate()
-        Log.d("ASSIST_EXAMPLE", "start voice interaction session service")
+        Log.d(TAG, "start voice interaction session service")
     }
 
     override fun onDestroy() {
-        Log.d("ASSIST_EXAMPLE", "destroy voice interaction session service")
+        Log.d(TAG, "destroy voice interaction session service")
         super.onDestroy()
     }
 }

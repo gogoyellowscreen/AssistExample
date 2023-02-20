@@ -5,16 +5,16 @@ import android.util.Log
 
 class InteractionService : VoiceInteractionService() {
     init {
-        Log.d("ASSIST_EXAMPLE", "initing interaction")
+        Log.d(TAG, "initing interaction")
     }
 
     override fun onCreate() {
         super.onCreate()
-        Log.d("ASSIST_EXAMPLE", "on create VoiceInteractionService")
+        Log.d(TAG, "on create VoiceInteractionService")
     }
 
     override fun onDestroy() {
-        Log.d("ASSIST_EXAMPLE", "on destroy VoiceInteractionService")
+        Log.d(TAG, "on destroy VoiceInteractionService")
         super.onDestroy()
     }
 }
