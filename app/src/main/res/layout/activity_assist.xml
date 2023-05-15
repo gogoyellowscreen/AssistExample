@@ -46,6 +46,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <Button
+        android:id="@+id/crash_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="throw runtime exception"
+        app:layout_constraintTop_toBottomOf="@id/record_permission_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
     <View
         android:id="@+id/record_audio_button"
         android:layout_marginTop="20dp"
@@ -55,7 +65,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/open_activity_button" />
+        app:layout_constraintTop_toBottomOf="@id/crash_button" />
 
     <View
         android:id="@+id/record_audio_view"
@@ -66,6 +76,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/open_activity_button" />
+        app:layout_constraintTop_toBottomOf="@id/crash_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

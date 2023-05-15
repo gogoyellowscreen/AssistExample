@@ -55,6 +55,7 @@ class InteractionSession(context: Context) : VoiceInteractionSession(context) {
         val openOtherAppButton = view.findViewById<Button>(R.id.open_other_app_button)
         val openMainActivityButton = view.findViewById<Button>(R.id.open_activity_button)
         val recordAudioPermissionButton = view.findViewById<Button>(R.id.record_permission_button)
+        val crashButton = view.findViewById<Button>(R.id.crash_button)
         recordAudioButton = view.findViewById(R.id.record_audio_button)
         recordAudioView = view.findViewById(R.id.record_audio_view)
 
@@ -66,6 +67,9 @@ class InteractionSession(context: Context) : VoiceInteractionSession(context) {
         }
         recordAudioPermissionButton.setOnClickListener {
             requestRecordAudioPermission()
+        }
+        crashButton.setOnClickListener {
+            throw RuntimeException("Simulate app crash.")
         }
         recordAudioButton.setOnClickListener {
             switchRecordAudio()

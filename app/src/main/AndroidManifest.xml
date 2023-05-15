@@ -26,6 +26,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".RequestRecordAudioPermission"
+            android:theme="@style/Theme.Transparent"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity=".RequestRecordAudioPermission"
+            android:noHistory="true"
+            android:exported="true" />
+
         <service
             android:name=".voice.InteractionService"
             android:permission="android.permission.BIND_VOICE_INTERACTION"
